@@ -14,7 +14,7 @@ const routes = (
       </Route>
     </Router>
 );
-
+//Meteor
 Meteor.startup(()=>{
   ReactDOM.render(routes, document.querySelector('.render-target'));
 })

@@ -26,11 +26,17 @@ class BinsList extends Component {
   }
 
   render(){
-    return (
-      <ul className="list-group">
-        {this.renderList()}
-      </ul>
-    );
+    if(this.props.bins.length > 0) {
+      return (
+        <ul className="list-group">
+          {this.renderList()}
+        </ul>
+      );
+    } else {
+      return (
+        <div>Welcome to Markbin</div>
+      );
+    }
   }
 }
 

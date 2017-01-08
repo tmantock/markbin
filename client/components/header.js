@@ -13,15 +13,15 @@ class Header extends Component {
 
   render(){
     return (
-      <nav className="nav navbar-inverse">
+      <nav className="nav navbar-inverse" id="navbar">
         <div className="navbar-header">
           <Link to="/" className="navbar-brand">MarkBin</Link>
         </div>
         <ul className="nav navbar-nav">
-          <li>
+          <li className = "nav-link">
             <Accounts />
           </li>
-          <li>
+          <li className = "nav-link">
             <a href="#" onClick={this.onBinClick.bind(this)}>Create Bin</a>
           </li>
         </ul>
